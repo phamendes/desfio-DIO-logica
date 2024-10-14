@@ -19,13 +19,13 @@ function determinarClasse(xp) {
 }
 
 // Número aleatório de XP
-function gerarNumeroAleatorio(min, max) {
+function xpAleatorio(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 // Nome e a quantidade de XP do herói
 const nomeHeroi = "Sr do Passinho"; // Substitua pelo nome do herói
-const xpHeroi = gerarNumeroAleatorio(0, 11000);
+const xpHeroi = xpAleatorio(0, 11000);
 
 // Classe do herói com base na quantidade de XP
 const nivelHeroi = determinarClasse(xpHeroi);
